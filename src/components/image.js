@@ -24,7 +24,6 @@ const image = () => {
                 <div>
                 <Container>
                       <Row>
-               
                     {img.map(key => 
                       <Col md ="3" className = "image_render">
                       <img  src = {`https://res.cloudinary.com/dcjsivxjw/image/upload/w_200,h_200,c_scale/v${key.version}/${key.public_id}.jpg`}
@@ -32,15 +31,9 @@ const image = () => {
                       </img>
                       </Col>
                       )}
-
-                      test
-                    
                     </Row>
                       </Container> 
                   </div>
-                  );
-         
+                  );      
   }
-
-
 export default image;
