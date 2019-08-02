@@ -6,7 +6,6 @@ import image from './image'
 import './styles/imageUpload.css'
 
 
-
 class imageUpload extends Component{
 
 state = {
