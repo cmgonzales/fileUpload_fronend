@@ -12,7 +12,7 @@ const image = () => {
     async function fetchMyAPI() {
       try{
         
-      let response = await fetch(`https://res.cloudinary.com/${process.env.REACT_APP_CLOUD_NAME}/image/list/profile.json`)
+      let response = await fetch(`https://res.cloudinary.com/dcjsivxjw/image/list/profile.json`)
       let data = await response.json()
 
       setimg(data.resources)
@@ -33,7 +33,7 @@ const image = () => {
                
                     {img.map(key => 
                       <Col md ="3" className = "image_render">
-                      <img  src = {`https://res.cloudinary.com/${process.env.REACT_APP_CLOUD_NAME}/image/upload/w_180,h_200,c_thumb/v${key.version}/${key.public_id}.jpg`}
+                      <img  src = {`https://res.cloudinary.com/dcjsivxjw/image/upload/w_180,h_200,c_thumb/v${key.version}/${key.public_id}.jpg`}
                       alt = "photos"> 
                       </img>
                       </Col>
