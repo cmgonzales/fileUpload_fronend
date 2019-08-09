@@ -1,3 +1,3 @@
-exports.CLIENT_ORIGIN = process.env.NODE_ENV === 'production'
+exports.API_URL = process.env.NODE_ENV === 'production'
   ? 'https://upload-serv.herokuapp.com/'
-  : 'http://localhost:3000'
+  : 'http://localhost:8080'
